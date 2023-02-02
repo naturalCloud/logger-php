@@ -1,0 +1,53 @@
+{
+  "name": "natural-cloud/logger-php",
+  "description": "quick into php framework",
+  "keywords": [
+    "php",
+    "hyperf",
+    "laravel",
+    "logger"
+  ],
+  "support": {
+    "issues": "https://github.com/naturalCloud/logger-php/issues",
+    "source": "https://github.com/naturalCloud/logger-php"
+  },
+  "type": "library",
+  "require": {
+    "php": ">=7.2",
+    "monolog/monolog": "^2.0",
+    "php-di/php-di": "^6.4",
+    "psr/log": "^1.0|^2.0|^3.0",
+    "ext-mbstring": "*",
+    "ext-ctype": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "conflict": {
+    "monolog/monolog": ">=2.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "NaturalCloud\\Logger\\": "src/"
+    },
+    "files": [
+      "src/Support/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NaturalCloud\\Logger\\Test\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "yunqi",
+      "email": "yunqi.zhang@foxmail.com"
+    }
+  ]
+}
