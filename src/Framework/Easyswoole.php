@@ -79,7 +79,7 @@ class Easyswoole
      * @param $logClass
      * @return mixed
      */
-    public static function setLogger(array $config, $loggerKey = 'logger-new', $logClass = LogManager::class, )
+    public static function setLogger(array $config, $loggerKey = 'logger-new', $logClass = LogManager::class)
     {
         return \EasySwoole\Component\Di::getInstance()->set($loggerKey, $logClass, $config);
     }
